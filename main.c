@@ -1,4 +1,4 @@
-#include <stdio.h>g
+#include <stdio.h>
 #define ARRAY_SIZE 10
 
 int array[ARRAY_SIZE];
