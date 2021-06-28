@@ -6,11 +6,14 @@ int top = -1;
 
 int push(int data)
 {
+    //we check if stack already full
+    //top + 1 means getting new top index after push data for stack
     if(top + 1 >= ARRAY_SIZE)
     {
         printf("\nStack overflow....");
         return top;
     }
+    //push operation made here, we just add at top + 1 index
     array[top+1] = data;
     top++;
     return top;
@@ -18,6 +21,7 @@ int push(int data)
 
 int pop()
 {
+    // top == -1 means stack is empty
     if(top - 1 < -1)
     {
         printf("Stack is empty");
